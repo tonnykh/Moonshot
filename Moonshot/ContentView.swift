@@ -31,8 +31,10 @@ struct ContentView: View {
                                 VStack {
                                     Text(mission.displayName)
                                         .font(.headline)
+                                        .foregroundColor(.white)
                                     Text(mission.formattedLaunchDate)
                                         .font(.caption)
+                                        .foregroundColor(.white.opacity(0.5))
                                 }
                                 .padding(.vertical)
                                 .frame(maxWidth: .infinity)
@@ -50,6 +52,7 @@ struct ContentView: View {
             }
             .navigationTitle("Moonshot")
             .background(.darkBackground)
+            .preferredColorScheme(.dark)
         }
     }
 }

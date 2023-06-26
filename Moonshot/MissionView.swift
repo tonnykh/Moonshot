@@ -26,8 +26,8 @@ struct MissionView: View {
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.vertical)
                     
-                    Text(mission.formattedLaunchDate)
-                        .foregroundColor(.secondary)
+                    Text("Launch date: \(mission.formattedLaunchDate)")
+                        .font(.headline)
                     
                     VStack(alignment: .leading) {
                         RectangleDivider()
